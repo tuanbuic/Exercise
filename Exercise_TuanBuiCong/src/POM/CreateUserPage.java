@@ -6,13 +6,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class CreateUserPage {
-//public static void main (String[]args) {
-//	String baseUrL= "http://demo.guru99.com/v4/manager/Managerhomepage.php";
-//	WebDriver driver ;
-//	System.getProperty("webdriver.chrome.driver", "//resource//chromedriver.exe");
-//	driver = new ChromeDriver();
-//	driver.get(baseUrL);
-//}
 	WebDriver driver;
 
 	@FindBy(xpath = "//a[contains(text(),'New Customer')]")
@@ -58,7 +51,7 @@ public class CreateUserPage {
 	public void clickCustomerGender(String value) {
 		if (value == "male") {
 			cusGender1.click();
-		} else if(value == "female") {
+		} else if (value == "female") {
 			cusGender2.click();
 		}
 	}
